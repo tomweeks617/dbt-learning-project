@@ -13,5 +13,28 @@ models:
         description: business key
         tests:
           - not_null
-          
+  - name: stg_tpcds__customer_demographics
+    description: |
+     The customer demographics table contains one row for each unique combination of customer demographic
+     information
+    columns:
+      - name: int64_field_0
+        description: primary key 
+      - name: string_field_1
+        description: |
+         describes the customer's gender and contains the following 
+         values M for Males and F for Females
+      - name: string_field_2
+        description: "{{doc('cd_marital_status')}}"
+        tests:
+          - accepted_values:
+              values: ['S','M','D','W','U']
+      - name: string_field_3
+      - name: int64_field_4
+      - name: string_field_5
+      - name: int64_field_6
+      - name: int64_field_7
+      - name: int64_field_8
+      - name: string_field_9
+      
       

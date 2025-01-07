@@ -41,4 +41,10 @@ SELECT
   , c_login
   , c_email_address
   , c_last_review_date_sk
+  , concat(c_first_name, ' ', c_last_name) as c_full_name
+  , case
+       when c_preferred_cust_flag = TRUE then true
+       when c_preferred_cust_flag = FALSE then false
+    end as c_is_preferred_customer
+  , date(c_birth_year, c_birth_month, c_birth_day) as c_birthdate
 FROM source_data
