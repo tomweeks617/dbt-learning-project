@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: cusotmer
+  - name: stg_tpcds__customer
     description: "THis table has basic information about a customer"
     columns:
       - name: c_customer_sk
