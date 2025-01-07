@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_tpcds_data
+    tables:
+      - name: customer
+
+models:
+  - name: cusotmer
+    description: "THis table has basic information about a customer"
