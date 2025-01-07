@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_tpcds_data
+    description: tpcds models any industry that must manage, sell and distrubitue products.
+    database: dbt-learning-447111
+    schema: raw_tpcds_data
+    tables:
+      - name: customer
+        description: Each row in this dimension table represents a customer.
